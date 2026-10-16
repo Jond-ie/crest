@@ -14,6 +14,11 @@ Crest's own source code is not published.
 <img src="screenshots/library.png" width="200">
 <img src="screenshots/album.png" width="200">
 </p>
+<p>
+<img src="screenshots/deck-tone.png" width="200">
+<img src="screenshots/deck-space.png" width="200">
+<img src="screenshots/equalizer.png" width="200">
+</p>
 
 ## Install
 
@@ -56,7 +61,9 @@ Sideloaded apps run in Apple's sandbox, so:
 ### Sound
 - **16-band parametric EQ** (or a graphic one), **AutoEQ** headphone profile import, and a separate EQ per output:
   speaker, AirPods, a USB DAC… each keeps its own and Crest switches when you connect.
-- Bass / treble / preamp knobs, a limiter, balance, stereo width, mono, reverb, tempo and key lock.
+- **The Deck** (swipe up on the player): a **Tone** page with the EQ curve, bass / treble / preamp / crossfade knobs,
+  the limiter, transitions and ReplayGain, and a **Space** page with balance, stereo width, reverb (room, hall,
+  plate, church), tempo, mono and key lock.
 
 ### Library
 - Albums, artists, genres, folders, songs; search; **smart playlists** with rules; ratings; listening history and
