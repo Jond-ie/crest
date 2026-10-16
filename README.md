@@ -5,7 +5,7 @@ format you can throw at it, and it looks like a piece of hi-fi gear, not an Appl
 
 Crest plays **your own files**: no streaming, no account, no tracking.
 
-**Status: public beta (1.0.0 Beta 2).** Free during the beta. This repo holds the releases and the issue tracker;
+**Status: public beta (1.0.0 Beta 2).** This repo holds the releases and the issue tracker;
 Crest's own source code is not published.
 
 <p>
