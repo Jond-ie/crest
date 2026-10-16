@@ -63,7 +63,8 @@ Sideloaded apps run in Apple's sandbox, so:
   stats.
 - **Synced lyrics** (word by word where the file has it), a tag editor, and file info (format, bit depth, sample
   rate, bitrate).
-- Add music from the **Files** app or with **Wi-Fi Transfer** from any computer on the same network.
+- Add music with **Wi-Fi Transfer** from any computer on the same network, or from the **Files** app (jailbreak
+  build; see the note above for TrollStore / sideload).
 
 ### Everything else
 - **Scrobbling** to ListenBrainz and Last.fm (optional; off until you connect an account).
