@@ -69,8 +69,47 @@ Sideloaded apps run in Apple's sandbox, so:
 ### Everything else
 - **Scrobbling** to ListenBrainz and Last.fm (optional; off until you connect an account).
 - A **Now Playing widget**, **CarPlay** (jailbreak / TrollStore builds) and lock screen / Control Center controls.
-- The **"Smoked Acrylic Hi-Fi"** look: smoked glass panels, spun-aluminium keys, a dot-matrix display that follows
-  your accent colour, optional L/R VU meters.
+- A sleep timer (including "stop after this song"), a visualizer and a stereo field view.
+
+## Themes and the look
+Crest is meant to feel like a piece of hi-fi gear you'd want on a shelf, not another flat list of songs.
+
+- **"Smoked Acrylic Hi-Fi"**: smoked glass panels over a near-black brushed base, spun-aluminium round keys,
+  square-cut chips, and a dot-matrix display for the song title (in a bundled pixel font).
+- **7 accent colours**: Mint, Amber, Ice, Rose, Violet, Lime and Orange. The accent runs through the buttons, the
+  waveform, the knob rings, the glows and even the dot-matrix ink.
+- **Two bases**: Graphite, or **OLED Black** for a fully black background.
+- **Album pages take their colours from the cover art** (the way iTunes 11 did): the title, buttons and track list
+  pick up the album's own palette.
+- **Songs without artwork get a generated cover**: an anodised metal plate with the album's initials and a colour
+  stripe, so the library never looks empty.
+- **Optional L/R VU meters** under the waveform (Settings → Appearance; off by default, and they cost nothing when off).
+- Knobs that turn with a drag and a detent, latching shuffle / repeat keys, and haptics on the controls.
+
+## How Automix works
+Automix is a DJ-style transition engine, not a plain crossfade:
+- It reads each song's tempo and beat grid and starts the blend **exactly on a beat**, so the two songs stay locked.
+- **Tempo matching**: the incoming song is stretched to the outgoing tempo during the blend (e.g. 120 → 124 BPM),
+  then glides back to its own tempo over its next 8 beats and plays untouched from there.
+- **Bass swap**: the incoming song comes in without its bass; halfway through, on a beat, the basslines swap, so
+  two basslines never fight each other.
+- **Echo out**: the last beat of the outgoing song repeats and fades (each repeat a little quieter and darker)
+  while the next song starts on the cut.
+- **Filter sweep**: the outgoing song is filtered away as the new one comes in.
+- Loudness is matched across the transition, and **albums stay gapless** even with Automix on.
+
+## Under the hood
+- **Decoding**: Apple's own decoders where they handle the file, and a decode-only FFmpeg build (as its own
+  library) for everything else, all feeding one playback engine.
+- **Sample rates**: the audio session is switched to each file's own rate, so a 44.1 kHz song and a 96 kHz song
+  both play natively when the output supports it. Crest marks the songs it has to resample.
+- **EQ and effects**: a parametric EQ with per-output presets, a limiter, ReplayGain that never
+  pushes a song past full scale, and a time-stretcher (Signalsmith Stretch) for tempo and key lock.
+- **Library**: an on-device database with smart-playlist rules, play counts, ratings and history; tags are read and
+  written with TagLib.
+- **Interface**: SwiftUI for the screens, with the parts that redraw every frame (waveform, meters, visualizer, EQ
+  curve) kept on Core Animation so scrolling and the player stay smooth, even on an A13.
+- About 20,000 lines of Objective-C and Swift, plus the open-source parts listed below.
 
 ## Tested on
 - Jailbroken: iOS 16.2 (A13) and iOS 17.5.1 (A13), rootless.
