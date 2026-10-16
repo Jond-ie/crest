@@ -28,10 +28,13 @@ Pick the one that matches your phone. Downloads are on the [Releases](../../rele
 - **iOS 15 and up.** One build runs on every iPhone that can run iOS 15.
 - Don't install the .tipa on a phone that already has the jailbreak .deb: they use the same app ID. Pick one.
 
+> **Adding music on the sideload build (and possibly the TrollStore build): use Wi-Fi Transfer for now.**
+> Importing through the Files app may not work on those builds yet. Wi-Fi Transfer is tested and works.
+
 ### What the sideload version can't do
 Sideloaded apps run in Apple's sandbox, so:
-- It only sees music you put **into Crest**: use **Wi-Fi Transfer** (drag songs in from a computer's browser) or
-  the Files app (On My iPhone → Crest). It can't see songs synced to the Music app.
+- It only sees music you put **into Crest**, and for now that means **Wi-Fi Transfer** (drag songs in from a
+  computer's browser). It can't see songs synced to the Music app.
 - No CarPlay (that needs an entitlement sideloading can't grant).
 - The widget only works if your signing tool keeps the app group.
 - With a free Apple ID, the app has to be re-signed every 7 days (your sideloading tool does this).
@@ -75,7 +78,8 @@ Sideloaded apps run in Apple's sandbox, so:
 - Not tested yet: CarPlay in a real car, iOS 15 with this beta, and many weird files. Reports welcome.
 
 ## Known issues (Beta 2)
-- Sideload build: adding songs through the Files picker may not work yet. Use Wi-Fi Transfer for now.
+- Sideload build, and possibly the TrollStore build: only **Wi-Fi Transfer** is supported for adding music right
+  now; importing through the Files app may not work yet.
 - CarPlay hasn't been tried in a car.
 
 ## Bugs and ideas
