@@ -2,8 +2,8 @@
 
 # Crest
 
-**A hi-fi offline music player for iPhone.**<br>
-Every song at its own sample rate. Nearly every format. Looks like hi-fi gear, not an Apple Music clone.
+**A music player for your own songs that plays them exactly as good as the files are.**<br>
+No streaming, no account, no tracking. Looks like hi-fi gear, not an Apple Music clone.
 
 [![Release](https://img.shields.io/github/v/release/Jond-ie/crest?include_prereleases&label=release&color=f07c1c)](../../releases)
 ![iOS 15+](https://img.shields.io/badge/iOS-15%2B-555)
@@ -11,7 +11,7 @@ Every song at its own sample rate. Nearly every format. Looks like hi-fi gear, n
 ![TrollStore](https://img.shields.io/badge/TrollStore-.tipa-555)
 ![Sideload](https://img.shields.io/badge/sideload-.ipa-555)
 
-**[Download](../../releases)** · **[Sileo repo](https://jond-ie.github.io/repo)** · **[Report a bug](../../issues)**
+**[Website](https://jond-ie.github.io/repo/crest/)** · **[Download](../../releases)** · **[Sileo repo](https://jond-ie.github.io/repo)** · **[Report a bug](../../issues)** · **[X @Jond_ie](https://x.com/Jond_ie)**
 
 <img src="screenshots/player.png" width="24%"> <img src="screenshots/deck-tone.png" width="24%"> <img src="screenshots/deck-space.png" width="24%"> <img src="screenshots/equalizer.png" width="24%">
 <img src="screenshots/home.png" width="24%"> <img src="screenshots/library.png" width="24%"> <img src="screenshots/album.png" width="24%">
@@ -20,20 +20,39 @@ Every song at its own sample rate. Nearly every format. Looks like hi-fi gear, n
 
 Crest plays **your own files**: no streaming, no account, no tracking.
 
-> **Public beta: 1.0.0 Beta 2.** This repo holds the releases and the issue tracker; Crest's own source code
-> isn't published.
+> **Public beta: 1.0.0 Beta 3.** New: Bit-Perfect mode, a Minimal Player, and big libraries that scan safely.
+> This repo holds the releases and the issue tracker; Crest's own source code isn't published.
 
 ### Highlights
-- 🎧 **FLAC, ALAC, DSD, Opus and ~15 more formats**, each at its own sample rate
-- 🎛️ **The Deck**: EQ curve, knobs, reverb, tempo and key lock, one swipe up from the player
-- 🔀 **Automix**: beat-matched, tempo-matched DJ transitions that keep albums gapless
-- 🎚️ **16-band parametric EQ** with AutoEQ import and a separate EQ for every output
-- 🎨 **Smoked Acrylic Hi-Fi** look with 7 accent colours and OLED Black
-- 📱 **Jailbreak, TrollStore or sideload**: no jailbreak needed
+- **Bit-Perfect mode**: the file reaches your DAC or headphones untouched, proven sample for sample
+- **FLAC, ALAC, DSD, Opus and ~15 more formats**, each at its own sample rate
+- **The Deck**: EQ curve, knobs, reverb, tempo and key lock, one swipe up from the player
+- **Automix**: beat-matched, tempo-matched DJ transitions that keep albums gapless
+- **16-band parametric EQ** with AutoEQ import and a separate EQ for every output
+- **Smoked Acrylic Hi-Fi** look with 7 accent colours and OLED Black
+- **Jailbreak, TrollStore or sideload**: no jailbreak needed
 
 ---
 
-## 📥 Install
+## Made for you if…
+
+| You… | Crest… |
+|---|---|
+| rip CDs or buy FLAC | plays every song lossless, at its own sample rate |
+| have odd formats | plays APE, WavPack, DSD and CUE sheets too |
+| listen to whole albums | stays gapless, even with Automix on |
+| want it to flow like a DJ set | blends songs on the beat with Automix |
+| switch between AirPods, a car and a speaker | keeps a separate EQ for each and switches by itself |
+| found your headphones on AutoEQ | imports the curve |
+| have some songs way louder than others | evens them out with ReplayGain |
+| sing along | shows synced lyrics, word by word when the file has them |
+| have years of songs in the Music app | brings them in with your plays and stars, no copies (jailbreak / TrollStore) |
+| track what you listen to | scrobbles to ListenBrainz and Last.fm |
+| aren't jailbroken | has TrollStore and sideload builds |
+
+---
+
+## Install
 
 Downloads are on the **[Releases](../../releases)** page. Pick the one for your phone:
 
@@ -63,19 +82,22 @@ Sideloaded apps run in Apple's sandbox, so:
 
 ---
 
-## ✨ Features
+## Features
 
-### ▶️ Playback
+### Playback
 - **Formats:** FLAC, ALAC, WAV, AIFF, MP3, AAC, Opus, Vorbis, APE, WavPack, Musepack, TAK, TTA, WMA,
   DSD (DSF/DFF) and CUE sheets.
-- **Bit-perfect where the hardware allows:** each song plays at its own sample rate. Crest only resamples when the
-  output can't do the file's rate, and says so (the RESAMPLED tag on the player).
-- **Gapless**, **crossfade** and **[Automix](#-how-automix-works)**.
+- **Bit-Perfect mode** (Settings → Bit-Perfect): the song goes straight to the output, with no EQ, effects,
+  volume ramps or mixing in between. Checked sample for sample against the file. A **BIT-PERFECT** label shows when
+  it really is; tap the format chips on Now Playing to see why when it isn't (for example the built-in speaker runs at 48 kHz).
+- **Each song at its own sample rate:** Crest only resamples when the output can't do the file's rate, and says so
+  (the RESAMPLED tag on the player).
+- **Gapless**, **crossfade** and **[Automix](#how-automix-works)**.
 - **ReplayGain** (track / album) and EBU R128 loudness levelling.
 - Plays the songs already synced to the **Music app** (jailbreak / TrollStore; not Apple Music downloads or DRM).
 - The queue comes back after a relaunch, paused where you left it.
 
-### 🎛️ Sound
+### Sound
 - **16-band parametric EQ** (or graphic), **AutoEQ** headphone profile import.
 - **A separate EQ per output**: speaker, wired headphones, every Bluetooth device, USB DACs, CarPlay and AirPlay.
   Crest switches when the output changes.
@@ -83,7 +105,7 @@ Sideloaded apps run in Apple's sandbox, so:
   - **Tone**: EQ curve, bass / treble / preamp / crossfade knobs, limiter, transitions, ReplayGain.
   - **Space**: balance, stereo width, reverb (room, hall, plate, church), tempo, mono and key lock.
 
-### 📚 Library
+### Library
 - Albums, artists, genres, folders and songs, search, **smart playlists** with rules, ratings, listening history
   and stats.
 - **Synced lyrics** (word by word where the file has it), a tag editor, and file info (format, bit depth, sample
@@ -91,14 +113,14 @@ Sideloaded apps run in Apple's sandbox, so:
 - Add music with **Wi-Fi Transfer** from any computer on the same network, or from the **Files** app (jailbreak
   build; see the note under Install).
 
-### 🔌 Everything else
+### Everything else
 - **Scrobbling** to ListenBrainz and Last.fm (off until you connect an account).
 - **Now Playing widget**, **CarPlay** (jailbreak / TrollStore), lock screen and Control Center controls.
 - Sleep timer (including "stop after this song"), visualizer and a stereo field view.
 
 ---
 
-## 🎨 Themes and the look
+## Themes and the look
 
 Crest is meant to feel like hi-fi gear you'd want on a shelf, not another flat list of songs.
 
@@ -110,11 +132,12 @@ Crest is meant to feel like hi-fi gear you'd want on a shelf, not another flat l
 | **Album pages** | Take their colours from the cover art, the way iTunes 11 did |
 | **No artwork?** | Crest generates a cover: an anodised metal plate with the album's initials and a colour stripe |
 | **VU meters** | Optional L/R meters under the waveform (Settings → Appearance; off by default, no cost when off) |
+| **Minimal Player** | A calm Now Playing: big plain type, bare keys, a thin waveform, no faceplate (Settings → Appearance) |
 | **Feel** | Knobs with drag and detents, latching shuffle / repeat keys, haptics on the controls |
 
 ---
 
-## 🔀 How Automix works
+## How Automix works
 
 Automix is a DJ-style transition engine, not a plain crossfade.
 
@@ -129,7 +152,7 @@ Automix is a DJ-style transition engine, not a plain crossfade.
 
 ---
 
-## ⚙️ Under the hood
+## Under the hood
 
 <details>
 <summary><b>How it's built</b></summary>
@@ -149,34 +172,35 @@ Automix is a DJ-style transition engine, not a plain crossfade.
 
 ---
 
-## 🧪 Tested on
+## Tested on
 
 | Build | Tested |
 |---|---|
-| Jailbreak (rootless) | iOS 16.2 (A13), iOS 17.5.1 (A13) |
+| Jailbreak (rootless) | iOS 15.8.6 (A10), iOS 16.2 (A13), iOS 17.5.1 (A13); an earlier Beta 3 build on iOS 18 (A13) |
 | TrollStore | Installs and runs |
 | Sideload | A stock iPhone on **iOS 27 beta**: installs, plays, Wi-Fi Transfer works |
-| Not yet | CarPlay in a real car, iOS 15 with this beta, lots of weird files: reports welcome |
+| Big libraries | 23,000 songs scanned, leaving the app mid-scan (iOS 17.5.1) |
+| Not yet | CarPlay in a real car, lots of weird files: reports welcome |
 
-## 🐞 Known issues (Beta 2)
+## Known issues (Beta 3)
 - Sideload, and possibly TrollStore: only **Wi-Fi Transfer** adds music right now; Files import may not work yet.
 - CarPlay hasn't been tried in a car.
 
-## 💬 Bugs and ideas
+## Bugs and ideas
 Open an **[issue](../../issues)** with:
 1. the build (`.deb` / `.tipa` / sideload `.ipa`),
 2. your iOS version,
 3. what happened. For files that won't play or sound wrong, add the format (Crest shows it under **Get Info**).
 
-## 🔒 Privacy
+## Privacy
 No analytics, no ads. Crest only goes online if you turn on **scrobbling** (ListenBrainz / Last.fm) or **online
 lyrics** (LRCLIB); both are off until you switch them on. **Wi-Fi Transfer** only runs while its screen is open and
 asks for a PIN shown on the phone.
 
-## 📄 Open-source parts
+## Open-source parts
 Crest uses FFmpeg (LGPL 2.1, as a separate dynamic library), TagLib (MPL 1.1), Opus and Ogg (BSD), utfcpp (Boost)
 and Signalsmith Stretch (MIT). Full license texts are in the app (**Settings → Open-Source Licenses**).
 **[`third-party/`](third-party)** has the exact FFmpeg build script and the one change made to TagLib, so you can
 rebuild or replace those parts.
 
-<sub>Crest itself is © John d_ie, all rights reserved.</sub>
+<sub>Crest itself is © Jond-ie, all rights reserved.</sub>
