@@ -20,7 +20,7 @@ No streaming, no account, no tracking. Looks like hi-fi gear, not an Apple Music
 
 Crest plays **your own files**: no streaming, no account, no tracking.
 
-> **Public beta: 1.0.0 Beta 3.** New: Bit-Perfect mode, a Minimal Player, and big libraries that scan safely.
+> **Public beta: 1.0.0 Beta 4.** New: shuffle all of an artist's songs from Search, no more 50-result limit, and covers you add show right away.
 > This repo holds the releases and the issue tracker; Crest's own source code isn't published.
 
 ### Highlights
@@ -182,7 +182,14 @@ Automix is a DJ-style transition engine, not a plain crossfade.
 | Big libraries | 23,000 songs scanned, leaving the app mid-scan (iOS 17.5.1) |
 | Not yet | CarPlay in a real car, lots of weird files: reports welcome |
 
-## Known issues (Beta 3)
+## What's next: Beta 5
+Planned for the last beta before 1.0.0. Nothing here is promised yet, and reports from other iPhones help most:
+- **Files import on the sideload version** (today only Wi-Fi Transfer adds music there).
+- **CarPlay on jailbreak and TrollStore.** It hasn't been tried in a car yet, so I'd love testers.
+- **Skins:** more looks for Now Playing.
+- **Smaller polish**, like clearer options in the Minimal Player.
+
+## Known issues (Beta 4)
 - Sideload, and possibly TrollStore: only **Wi-Fi Transfer** adds music right now; Files import may not work yet.
 - CarPlay hasn't been tried in a car.
 
