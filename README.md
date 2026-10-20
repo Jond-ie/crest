@@ -20,7 +20,7 @@ No streaming, no account, no tracking. Looks like hi-fi gear, not an Apple Music
 
 Crest plays **your own files**: no streaming, no account, no tracking.
 
-> **Public beta: 1.0.0 Beta 4.** New: shuffle all of an artist's songs from Search, no more 50-result limit, and covers you add show right away.
+> **Public beta: 1.0.0 Beta 4.1.** New: shuffle all of an artist's songs from Search, no more 50-result limit, and covers you add show right away.
 > This repo holds the releases and the issue tracker; Crest's own source code isn't published.
 
 ### Highlights
@@ -189,7 +189,7 @@ Planned for the last beta before 1.0.0. Nothing here is promised yet, and report
 - **Skins:** more looks for Now Playing.
 - **Smaller polish**, like clearer options in the Minimal Player.
 
-## Known issues (Beta 4)
+## Known issues (Beta 4.1)
 - Sideload, and possibly TrollStore: only **Wi-Fi Transfer** adds music right now; Files import may not work yet.
 - CarPlay hasn't been tried in a car.
 
