@@ -20,7 +20,7 @@ No streaming, no account, no tracking. Looks like hi-fi gear, not an Apple Music
 
 Crest plays **your own files**: no streaming, no account, no tracking.
 
-> **Public beta: 1.0.0 Beta 4.1.** New: shuffle all of an artist's songs from Search, no more 50-result limit, and covers you add show right away.
+> **Crest 1.0.0 is out of beta.** New: every song plays at its own sample rate even when one follows another (no quiet conversion between 44.1 and 96 kHz), and **Classic**, the whole app as an iPod classic with a working click wheel.
 > This repo holds the releases and the issue tracker; Crest's own source code isn't published.
 
 ### Highlights
@@ -176,22 +176,21 @@ Automix is a DJ-style transition engine, not a plain crossfade.
 
 | Build | Tested |
 |---|---|
-| Jailbreak (rootless) | iOS 15.8.6 (A10), iOS 16.2 (A13), iOS 17.5.1 (A13); an earlier Beta 3 build on iOS 18 (A13) |
+| Jailbreak (Rootless and RootHide) | 1.0.0 on iOS 16.0.3 (XR); betas on iOS 15.8.6 (A10), iOS 16.2 (A13), iOS 17.5.1 (A13) and iOS 18 (A13) |
 | TrollStore | Installs and runs |
 | Sideload | A stock iPhone on **iOS 27 beta**: installs, plays, Wi-Fi Transfer works |
 | Big libraries | 23,000 songs scanned, leaving the app mid-scan (iOS 17.5.1) |
 | Not yet | CarPlay in a real car, lots of weird files: reports welcome |
 
-## What's next: Beta 5
-Planned for the last beta before 1.0.0. Nothing here is promised yet, and reports from other iPhones help most:
-- **Files import on the sideload version** (today only Wi-Fi Transfer adds music there).
-- **CarPlay on jailbreak and TrollStore.** It hasn't been tried in a car yet, so I'd love testers.
-- **Skins:** more looks for Now Playing.
-- **Smaller polish**, like clearer options in the Minimal Player.
+## What's next
+Nothing here is promised, and reports from other iPhones help most:
+- **CarPlay in a real car.** It hasn't been tried in one yet. If it acts up, **Settings → CarPlay → Share CarPlay Log** and attach it to an issue.
+- **Search in Classic**, with the click wheel.
+- **USB DAC reports:** if a song still shows **RESAMPLED** on a DAC that supports its rate, open an issue with the DAC's name.
 
-## Known issues (Beta 4.1)
-- Sideload, and possibly TrollStore: only **Wi-Fi Transfer** adds music right now; Files import may not work yet.
+## Known issues (1.0.0)
 - CarPlay hasn't been tried in a car.
+- Files import on the sideload version hasn't been confirmed on a real sideload yet; **Wi-Fi Transfer** always works.
 
 ## Bugs and ideas
 Open an **[issue](../../issues)** with:
