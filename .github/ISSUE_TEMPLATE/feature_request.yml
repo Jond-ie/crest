@@ -1,0 +1,16 @@
+name: Feature request
+description: An idea for Crest.
+title: "[Idea] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: How would you use it?
+      description: The situation it helps with. This decides what gets built first.

@@ -1,0 +1,45 @@
+name: Crash report
+description: Crest crashed, or your phone ended up in safe mode.
+title: "[Crash] "
+labels: ["crash"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Crash logs are in **Settings > Privacy & Security > Analytics & Improvements > Analytics Data**. Pick the entry from the time of the crash with **Crest** in its name, and attach it as a file.
+        Before posting, remove anything personal, such as Wi-Fi or Bluetooth names.
+  - type: input
+    id: device
+    attributes:
+      label: Device
+      placeholder: e.g. iPhone XR
+    validations:
+      required: true
+  - type: input
+    id: ios
+    attributes:
+      label: iOS version and jailbreak
+      placeholder: e.g. iOS 16.2, Dopamine 2.4 (Rootless)
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Crest version
+      description: Shown in Sileo or Zebra under the package.
+      placeholder: e.g. 1.0.0
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What were you doing when it crashed?
+    validations:
+      required: true
+  - type: textarea
+    id: log
+    attributes:
+      label: Crash log
+      description: Drag the file here.
+    validations:
+      required: true

@@ -1,0 +1,39 @@
+name: Bug report
+description: Something in Crest doesn't work as expected, but nothing crashed.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: input
+    id: device
+    attributes:
+      label: Device
+      placeholder: e.g. iPhone XR
+    validations:
+      required: true
+  - type: input
+    id: ios
+    attributes:
+      label: iOS version and jailbreak
+      placeholder: e.g. iOS 16.2, Dopamine 2.4 (Rootless)
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Crest version
+      description: Shown in Sileo or Zebra under the package.
+      placeholder: e.g. 1.0.0
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, and what did you expect?
+      description: The steps that lead to it, so it can be reproduced.
+    validations:
+      required: true
+  - type: textarea
+    id: other
+    attributes:
+      label: Other tweaks installed
+      description: Other music or audio tweaks that might be involved.

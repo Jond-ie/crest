@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions and quick help
+    url: https://x.com/Jond_ie
+    about: Ask on X (@Jond_ie). Bugs and crashes go in an issue so they can be tracked.
