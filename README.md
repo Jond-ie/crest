@@ -209,4 +209,4 @@ and Signalsmith Stretch (MIT). Full license texts are in the app (**Settings →
 **[`third-party/`](third-party)** has the exact FFmpeg build script and the one change made to TagLib, so you can
 rebuild or replace those parts.
 
-<sub>Crest itself is © Jond-ie, all rights reserved.</sub>
+<sub>Crest itself is © Jond_ie, all rights reserved.</sub>
