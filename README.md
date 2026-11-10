@@ -20,7 +20,7 @@ No streaming, no account, no tracking. Looks like hi-fi gear, not an Apple Music
 
 Crest plays **your own files**: no streaming, no account, no tracking.
 
-> **Crest 1.0.0 is out of beta.** New: every song plays at its own sample rate even when one follows another (no quiet conversion between 44.1 and 96 kHz), and **Classic**, the whole app as an iPod classic with a working click wheel.
+> **New in 1.1.0:** Car Mode, cover art download, resume and bookmarks for long files, a full-screen visualizer, skins, and Play and Shuffle on Home. The full list is in the [changelog](CHANGELOG.md).
 > This repo holds the releases and the issue tracker; Crest's own source code isn't published.
 
 ### Highlights
@@ -46,7 +46,7 @@ Crest plays **your own files**: no streaming, no account, no tracking.
 | found your headphones on AutoEQ | imports the curve |
 | have some songs way louder than others | evens them out with ReplayGain |
 | sing along | shows synced lyrics, word by word when the file has them |
-| have years of songs in the Music app | brings them in with your plays and stars, no copies (jailbreak / TrollStore) |
+| have years of songs in the Music app | brings them in with your plays and favourites, no copies (jailbreak / TrollStore) |
 | track what you listen to | scrobbles to ListenBrainz and Last.fm |
 | aren't jailbroken | has TrollStore and sideload builds |
 
@@ -58,7 +58,7 @@ Downloads are on the **[Releases](../../releases)** page. Pick the one for your 
 
 | Your phone | Get this | What you get |
 |---|---|---|
-| **Jailbroken** (rootless: Dopamine, palera1n…) | the **`.deb`**, or add **`https://jond-ie.github.io/repo`** in Sileo / Zebra | Everything. The repo gives you updates. |
+| **Jailbroken** (Rootless: Dopamine, palera1n…) | the **`.deb`**, or add **`https://jond-ie.github.io/repo`** in Sileo / Zebra | Everything. The repo gives you updates. |
 | **TrollStore** | **`Crest_….tipa`** | Everything, same as the jailbreak build. |
 | **Not jailbroken** | **`Crest_…-sideload.ipa`** with AltStore, SideStore, Sideloadly… | Sandboxed: see below. |
 
@@ -176,7 +176,7 @@ Automix is a DJ-style transition engine, not a plain crossfade.
 
 | Build | Tested |
 |---|---|
-| Jailbreak (Rootless and RootHide) | 1.0.0 on iOS 16.0.3 (XR); betas on iOS 15.8.6 (A10), iOS 16.2 (A13), iOS 17.5.1 (A13) and iOS 18 (A13) |
+| Jailbreak (Rootless and RootHide) | 1.1.0 on iOS 16.0.3 (XR), and launched in an iOS 18.6.2 virtual iPhone; earlier versions on iOS 15.8.6 (A10), iOS 16.2 (A13), iOS 17.5.1 (A13) and iOS 18 (A13) |
 | TrollStore | Installs and runs |
 | Sideload | A stock iPhone on **iOS 27 beta**: installs, plays, Wi-Fi Transfer works |
 | Big libraries | 23,000 songs scanned, leaving the app mid-scan (iOS 17.5.1) |
@@ -188,7 +188,9 @@ Nothing here is promised, and reports from other iPhones help most:
 - **Search in Classic**, with the click wheel.
 - **USB DAC reports:** if a song still shows **RESAMPLED** on a DAC that supports its rate, open an issue with the DAC's name.
 
-## Known issues (1.0.0)
+## Known issues (1.1.0)
+- 1.1.0 wasn't run on iOS 15 or 17 before release. If it misbehaves there, open an issue.
+- One report of a USB DAC staying on one rate (**RESAMPLED**) with Bit-Perfect on. 1.1.0 asks the DAC again and has **Ask Again** under Signal Path; not confirmed fixed.
 - CarPlay hasn't been tried in a car.
 - Files import on the sideload version hasn't been confirmed on a real sideload yet; **Wi-Fi Transfer** always works.
 
