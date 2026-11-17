@@ -2,6 +2,13 @@
 
 Each version as published on the Jond_ie repo (https://jond-ie.github.io/repo/). Dates are when the package went up on the repo.
 
+## 1.1.1
+
+- **Crest Music folder** (jailbreak and TrollStore): music in **On My iPhone → Crest Music** in the Files app plays in Crest, and Add from Files and Wi-Fi Transfer copy into it. **Open Crest's Folder** under Library → Add Music opens it in Files.
+- **Fixed:** songs put in the old "Crest" folder in Files never showed up; the jailbroken app isn't allowed to read that folder. Move them into Crest Music. (#4)
+- **Small screens:** on the iPhone SE (1st gen) and other 4-inch iPhones, the cover on Now Playing is bigger and the keys are smaller.
+- **A new library** shows Add from Files and Wi-Fi Transfer buttons on Home.
+
 ## 1.1.0
 
 - **Car Mode** (Minimal player): the cover edge to edge, then only the song and the scrubber. Tap with two fingers to play or pause; double-tap with two fingers to go in or out.

@@ -20,7 +20,7 @@ No streaming, no account, no tracking. Looks like hi-fi gear, not an Apple Music
 
 Crest plays **your own files**: no streaming, no account, no tracking.
 
-> **New in 1.1.0:** Car Mode, cover art download, resume and bookmarks for long files, a full-screen visualizer, skins, and Play and Shuffle on Home. The full list is in the [changelog](CHANGELOG.md).
+> **New in 1.1.1:** a **Crest Music** folder in On My iPhone that Crest plays from, a better fit on 4-inch iPhones, and a fix for songs in the old "Crest" folder in Files never showing up. 1.1.0 brought Car Mode, cover art download, resume and bookmarks, a full-screen visualizer and skins. The full list is in the [changelog](CHANGELOG.md).
 > This repo holds the releases and the issue tracker; Crest's own source code isn't published.
 
 ### Highlights
@@ -176,7 +176,7 @@ Automix is a DJ-style transition engine, not a plain crossfade.
 
 | Build | Tested |
 |---|---|
-| Jailbreak (Rootless and RootHide) | 1.1.0 on iOS 16.0.3 (XR), and launched in an iOS 18.6.2 virtual iPhone; earlier versions on iOS 15.8.6 (A10), iOS 16.2 (A13), iOS 17.5.1 (A13) and iOS 18 (A13) |
+| Jailbreak (Rootless and RootHide) | 1.1.1 and 1.1.0 on iOS 16.0.3 (XR); 1.1.0 also launched in an iOS 18.6.2 virtual iPhone; earlier versions on iOS 15.8.6 (A10), iOS 16.2 (A13), iOS 17.5.1 (A13) and iOS 18 (A13) |
 | TrollStore | Installs and runs |
 | Sideload | A stock iPhone on **iOS 27 beta**: installs, plays, Wi-Fi Transfer works |
 | Big libraries | 23,000 songs scanned, leaving the app mid-scan (iOS 17.5.1) |
@@ -188,9 +188,10 @@ Nothing here is promised, and reports from other iPhones help most:
 - **Search in Classic**, with the click wheel.
 - **USB DAC reports:** if a song still shows **RESAMPLED** on a DAC that supports its rate, open an issue with the DAC's name.
 
-## Known issues (1.1.0)
-- 1.1.0 wasn't run on iOS 15 or 17 before release. If it misbehaves there, open an issue.
-- One report of a USB DAC staying on one rate (**RESAMPLED**) with Bit-Perfect on. 1.1.0 asks the DAC again and has **Ask Again** under Signal Path; not confirmed fixed.
+## Known issues (1.1.1)
+- 1.1.1 was only run on iOS 16 before release, and the small-screen change hasn't been seen on a 4-inch iPhone yet. If something looks wrong, open an issue.
+- One report of 1.1.0 crashing at launch after updating from 1.0.0 on iOS 18.3.1 ([#5](https://github.com/Jond-ie/crest/issues/5)); the cause isn't known yet.
+- One report of a USB DAC staying on one rate (**RESAMPLED**) with Bit-Perfect on. 1.1.0 and later ask the DAC again and has **Ask Again** under Signal Path; not confirmed fixed.
 - CarPlay hasn't been tried in a car.
 - Files import on the sideload version hasn't been confirmed on a real sideload yet; **Wi-Fi Transfer** always works.
 
