@@ -2,6 +2,15 @@
 
 Each version as published on the Jond_ie repo (https://jond-ie.github.io/repo/). Dates are when the package went up on the repo.
 
+## 1.1.2
+
+- **Artist pages:** Play, Shuffle and Shuffle Albums. Shuffle Albums plays the artist's albums in a random order, each one start to finish. (#11)
+- **Featured artists:** a song tagged "Artist A feat. Artist B" sits with the rest of Artist A's songs, and shows under **Appears On** on Artist B's page. (#7)
+- **Tap the artist** on an album page to open their page. (#8)
+- **Album columns:** the grid button on Albums and artist pages picks Automatic or 2 to 6 columns. (#10)
+- **Back to the playing song:** swipe Now Playing down and the song list behind it scrolls to the playing song. (#9)
+- **Fixed:** levelling sometimes skipped the next song (#6), and Settings was cut off on 4-inch iPhones (#13). Tempo is greyed out while Bit-Perfect is on, since Bit-Perfect plays songs untouched (#12).
+
 ## 1.1.1
 
 - **Crest Music folder** (jailbreak and TrollStore): music in **On My iPhone → Crest Music** in the Files app plays in Crest, and Add from Files and Wi-Fi Transfer copy into it. **Open Crest's Folder** under Library → Add Music opens it in Files.
