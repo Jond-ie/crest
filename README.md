@@ -20,7 +20,7 @@ No streaming, no account, no tracking. Looks like hi-fi gear, not an Apple Music
 
 Crest plays **your own files**: no streaming, no account, no tracking.
 
-> **New in 1.1.2:** artist pages with Shuffle Albums, featured artists on their own page (Appears On), 2 to 6 album columns, and the song list scrolls to the playing song when you close Now Playing. 1.1.1 added the **Crest Music** folder in On My iPhone. The full list is in the [changelog](CHANGELOG.md).
+> **New in 1.1.3:** Crest no longer closes when a song ends with the phone locked. 1.1.2 added artist pages with Shuffle Albums, featured artists on their own page (Appears On), 2 to 6 album columns, and the song list scrolls to the playing song when you close Now Playing. 1.1.1 added the **Crest Music** folder in On My iPhone. The full list is in the [changelog](CHANGELOG.md).
 > This repo holds the releases and the issue tracker; Crest's own source code isn't published.
 
 ### Highlights
@@ -176,7 +176,7 @@ Automix is a DJ-style transition engine, not a plain crossfade.
 
 | Build | Tested |
 |---|---|
-| Jailbreak (Rootless and RootHide) | 1.1.2, 1.1.1 and 1.1.0 on iOS 16.0.3 (XR); 1.1.0 also launched in an iOS 18.6.2 virtual iPhone; earlier versions on iOS 15.8.6 (A10), iOS 16.2 (A13), iOS 17.5.1 (A13) and iOS 18 (A13) |
+| Jailbreak (Rootless and RootHide) | 1.1.3, 1.1.2, 1.1.1 and 1.1.0 on iOS 16.0.3 (XR); 1.1.0 also launched in an iOS 18.6.2 virtual iPhone; earlier versions on iOS 15.8.6 (A10), iOS 16.2 (A13), iOS 17.5.1 (A13) and iOS 18 (A13) |
 | TrollStore | Installs and runs |
 | Sideload | A stock iPhone on **iOS 27 beta**: installs, plays, Wi-Fi Transfer works |
 | Big libraries | 23,000 songs scanned, leaving the app mid-scan (iOS 17.5.1) |
@@ -188,8 +188,10 @@ Nothing here is promised, and reports from other iPhones help most:
 - **Search in Classic**, with the click wheel.
 - **USB DAC reports:** if a song still shows **RESAMPLED** on a DAC that supports its rate, open an issue with the DAC's name.
 
-## Known issues (1.1.2)
-- 1.1.2 was only run on iOS 16 before release. The Settings fix for 4-inch iPhones was checked at that screen width, not on a real 4-inch iPhone. If something looks wrong, open an issue.
+## Known issues (1.1.3)
+- 1.1.3 was only run on iOS 16 before release. The locked-phone fix was tested by making the next file unreadable, not on a locked iOS 15 phone.
+- Without Repeat One, if the next song's file still can't be opened when the current song ends, playback stops (Crest stays open). Unlock and press Play.
+- The Settings fix for 4-inch iPhones was checked at that screen width, not on a real 4-inch iPhone. If something looks wrong, open an issue.
 - One report of playback stopping after the song ends when the phone is locked (iPhone SE 1st gen, iOS 15, TrollStore; [#14](https://github.com/Jond-ie/crest/issues/14)). It doesn't happen on iOS 16; the cause isn't known yet.
 - One report of 1.1.0 crashing at launch after updating from 1.0.0 on iOS 18.3.1 ([#5](https://github.com/Jond-ie/crest/issues/5)); the cause isn't known yet.
 - One report of a USB DAC staying on one rate (**RESAMPLED**) with Bit-Perfect on. 1.1.0 and later ask the DAC again and has **Ask Again** under Signal Path; not confirmed fixed.

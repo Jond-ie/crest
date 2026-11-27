@@ -2,6 +2,10 @@
 
 Each version as published on the Jond_ie repo (https://jond-ie.github.io/repo/). Dates are when the package went up on the repo.
 
+## 1.1.3
+
+- **Fixed:** Crest closed when a song ended with the phone locked, if the next song's file couldn't be opened at that moment. On Repeat One the song now plays again, and any other next song is tried again every few seconds while the current one plays. Thanks to EpicFrisian for the crash logs. (#14)
+
 ## 1.1.2
 
 - **Artist pages:** Play, Shuffle and Shuffle Albums. Shuffle Albums plays the artist's albums in a random order, each one start to finish. (#11)
